@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main {
+  margin: auto;
+  max-width: 900px;
+  /* max-height: 1400px; */
+  margin-top: 4rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 200px;
+}
+
+.chat-container {
+  background: url('whatsup-background.jpg');
+  /* background: #fff; */
+  height: 60vh;
+  position: relative;
+  padding: 0.5rem;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.chat-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.chat-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+.chat-container::-webkit-scrollbar-thumb {
+  background: #888;
+  height: 10vh;
+}
+
+/* Handle on hover */
+.chat-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.chat-form {
+  display: flex;
+}
+
+.chat-form > input {
+  padding: 0.4rem;
+  width: 100%;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  border: none;
+}
+
+.chat-form > input:focus {
+  outline: none;
+}
+
+.chat-msg {
+  background: rgb(170, 164, 164);
+  margin: 10px;
+  padding: 0.5rem 0.7rem;
+  line-height: 25px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.chat-msg > p {
+  font-weight: bold;
+}
+
+.msg {
+  display: flex;
+  align-items: stretch;
+}
+
+.chat-btn {
+  padding: 7px 10px;
+  margin: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+.chat-btn:hover {
+  background: rgb(170, 164, 164);
+  color: #fff;
+  font-weight: bold;
+}
+
+.user-list > h3 {
+  text-align: center;
+}
+
+.users {
+  list-style: none;
+  font-weight: bold;
+  padding: 0.5rem 0 0 2rem;
+}
+
+.user {
+  padding: 0.5rem 0;
+}
+
+.user-icon {
+  padding: 0 10px;
+}
+
+.leave-room-btn {
+  padding: 0.4rem;
+  border-radius: 1rem;
+  border: none;
+  background: rgb(248, 79, 79);
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.leave-room-btn:hover {
+  background: red;
+}

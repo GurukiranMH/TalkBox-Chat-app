@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/message.css" />
+    <title>Chat</title>
+  </head>
+  <body>
+    <div class="main">
+      <form class="navbar" action="index.html">
+        <h1>Talk Box</h1>
+        <button type="submit" class="leave-room-btn">Leave Room</button>
+      </form>
+      <div class="container">
+        <div class="chat-window">
+          <div class="chat-container"></div>
+          <form action="" class="chat-form">
+            <input
+              type="text"
+              class="message"
+              placeholder="Enter the message"
+            />
+            <button type="submit" class="chat-btn">send</button>
+          </form>
+        </div>
+        <div class="user-list">
+          <h3>Users</h3>
+          <ul class="users">
+            <!-- <li class="user"><i class="fa-solid fa-user user-icon"></i>Guru</li>
+            <li class="user"><i class="fa-solid fa-user user-icon"></i>Guru</li>
+            <li class="user"><i class="fa-solid fa-user user-icon"></i>Guru</li>
+            <li class="user"><i class="fa-solid fa-user user-icon"></i>Guru</li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js"
+      integrity="sha512-juaCj8zi594KHQqb92foyp87mCSriYjw3BcTHaXsAn4pEB1YWh+z+XQScMxIxzsjfM4BeVFV3Ij113lIjWiC2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
